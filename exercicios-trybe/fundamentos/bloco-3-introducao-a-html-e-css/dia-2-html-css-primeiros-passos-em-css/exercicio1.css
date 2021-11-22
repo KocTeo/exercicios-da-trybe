@@ -1,0 +1,13 @@
+h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+#list-color-ul{
+    background-color: pink;
+}
+
+.back-p-list{
+    background-color: pink;
+}
