@@ -34,3 +34,28 @@ ol li{
 .list-linguaprog li:nth-child(2), .list-linguaprog li:nth-child(3){
     background-color: pink;
 }
+
+.list-link:hover li:nth-child(1){
+    font-weight: bolder;
+    color: orangered;
+}
+
+.list-link:hover li:nth-child(2){
+    font-weight: bolder;
+    color: rgb(0, 97, 0);
+}
+
+.list-link:hover li:nth-child(3){
+    font-weight: bolder;
+    color: black;
+}
+
+.list-link:hover li:nth-child(4){
+    font-weight: bolder;
+    color: yellow;
+}
+
+.list-link:hover li:nth-child(5){
+    font-weight: bolder;
+    color: rgb(78, 196, 104);
+}
