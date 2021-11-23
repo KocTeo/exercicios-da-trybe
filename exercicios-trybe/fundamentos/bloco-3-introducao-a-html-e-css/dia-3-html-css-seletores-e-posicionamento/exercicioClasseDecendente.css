@@ -1,0 +1,36 @@
+ol{
+    background-color: yellow;
+}
+
+ol li:nth-child(2n){
+    color: green;
+}
+
+ol li:nth-child(2n-1){
+    text-transform: uppercase;
+}
+
+h1, h3{
+    color: red;
+}
+
+h1 em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+ol li, ul li, ul li{
+    font-size: 20px;
+}
+
+ol li{
+    font-weight: bolder;
+}
+
+.list-linguaprog li:nth-child(-n+3){
+    color: blue;
+}
+
+.list-linguaprog li:nth-child(2), .list-linguaprog li:nth-child(3){
+    background-color: pink;
+}
