@@ -1,0 +1,17 @@
+div:hover{
+    border: 2px solid rgb(54, 240, 101);
+}
+
+h3{
+    background-color: rgb(178, 250, 238);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+div:nth-child(2n+1){
+    font-style: italic;
+}
+
+div:nth-of-type(3){
+    font-size: larger;
+}
