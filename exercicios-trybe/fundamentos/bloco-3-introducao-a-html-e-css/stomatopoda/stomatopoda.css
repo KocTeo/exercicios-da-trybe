@@ -16,7 +16,7 @@ table, td{
     border: 1px solid black;
 }
 
-.info-geral, .curiosity-vision{
+.info-geral, .curiositys{
     display: inline-block;
     margin-right: 500px;
     text-align: justify;
