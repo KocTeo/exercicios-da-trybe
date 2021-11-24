@@ -44,5 +44,9 @@ h1 {
       text-align: center;
       margin-top: 100px;
       position: absolute;
-      margin-left: 250px;
+      margin-left: 120px;
+  }
+
+  .lado-lado li {
+      display: inline-block;
   }
