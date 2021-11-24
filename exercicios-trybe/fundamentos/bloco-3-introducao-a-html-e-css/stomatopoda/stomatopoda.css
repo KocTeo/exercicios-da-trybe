@@ -1,3 +1,13 @@
 .list-nav {
     list-style: none;
 }
+
+.item-nav{
+    display: inline-block;
+    text-align: center;
+    width: 88px;
+}
+
+.list-nav li:nth-child(2), .list-nav li:nth-child(3) {
+    width: 50px;
+}
