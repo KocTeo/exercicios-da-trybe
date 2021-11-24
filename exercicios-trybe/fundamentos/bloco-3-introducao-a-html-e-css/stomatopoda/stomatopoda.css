@@ -11,3 +11,13 @@
 .list-nav li:nth-child(2), .list-nav li:nth-child(3) {
     width: 50px;
 }
+
+table, td{
+    border: 1px solid black;
+}
+
+.info-geral{
+    display: inline-block;
+    margin-right: 500px;
+    text-align: justify;
+}
