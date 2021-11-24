@@ -16,8 +16,13 @@ table, td{
     border: 1px solid black;
 }
 
-.info-geral{
+.info-geral, .curiosity-vision{
     display: inline-block;
     margin-right: 500px;
     text-align: justify;
+    margin-bottom: 15px;
+}
+
+.table-tabula{
+    margin-left: 120px;
 }
