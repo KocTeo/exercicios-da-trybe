@@ -30,13 +30,25 @@ for(let i = 1; i <= n; i++) {
     espaços = '';
 }
 
-for(let linha=1; linha<=n-2; linha++) {
-    for(let j = 0; j<=(n/2); j++){
-        espaços += ' ';
+// visto no gabarito do corse
+
+let asteriscos = '*';
+let espacos = '';
+
+let meioPiramide = (n + 1) / 2;
+let espacoEsquerdo = meioPiramide;
+let espacoDireito = meioPiramide;
+
+for (let linha = 0; linha <= meioPiramide; linha += 1) {
+  for (let coluna = 0; coluna <= n; coluna += 1) {
+    if (coluna > espacoEsquerdo && coluna < espacoDireito) {
+      espacos = espacos + asteriscos;
+    } else {
+      espacos = espacos + ' ';
     }
-    for(let coluna=1; coluna<=n; coluna++){
-        aux += '*';
-    }
-    console.log(espaços+aux); 
-    aux = '';
-}
+  }
+  console.log(espacos);
+  espacos = '';
+  espacoDireito += 1;
+  espacoEsquerdo -= 1
+};
