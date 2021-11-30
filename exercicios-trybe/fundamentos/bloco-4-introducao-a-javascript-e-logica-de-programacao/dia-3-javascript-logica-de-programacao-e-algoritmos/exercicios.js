@@ -52,3 +52,19 @@ for (let linha = 0; linha <= meioPiramide; linha += 1) {
   espacoDireito += 1;
   espacoEsquerdo -= 1
 };
+
+// exercicio 6
+
+let divisores = 1;
+let numeroPraChecagem = 31;
+
+for(let i = 2; i<=numeroPraChecagem; i++){
+  if(numeroPraChecagem%i===0){
+    divisores += 1;
+  }
+}
+if(divisores>2){
+  console.log('Não é primo!')
+} else{
+  console.log('É primo!')
+}
