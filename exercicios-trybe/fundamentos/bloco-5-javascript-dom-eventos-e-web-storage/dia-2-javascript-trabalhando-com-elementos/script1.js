@@ -27,8 +27,3 @@ let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
 let filhoDofilho = document.createElement('section');
 
 primeiroFilhoDoFilho.appendChild(filhoDofilho);
-
-let paiDeTudo = document.querySelector('#paiDoPai');
-let removeDoPaiDeTurdo = document.removeChild('section');
-
-console.log(document.getElementById('paiDoPai'));
