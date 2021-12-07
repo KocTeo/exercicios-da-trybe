@@ -4,13 +4,23 @@ const thirdLi = document.getElementById('third-li');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
-function recebeClass() {
-    firstLi.className = 'tech';
-    secondLi.className = 'tech';
-    thirdLi.className = 'tech';
+let liTag = document.querySelectorAll('li');
+
+liTag[0].addEventListener("click", recebeClass0);
+liTag[1].addEventListener("click", recebeClass1);
+liTag[2].addEventListener("click", recebeClass2);
+
+function recebeClass0() {
+  firstLi.className = 'tech';
 }
-// 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
-// 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+function recebeClass1() {
+  secondLi.className = 'tech';
+}
+function recebeClass2() {
+  thirdLi.className = 'tech';
+}
+
+
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
@@ -18,8 +28,8 @@ function recebeClass() {
 
 myWebpage.addEventListener("dblclick", redirecionaPag);
 
-function redirecionaPag(){
-    
+function redirecionaPag(event){
+  
 }
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
