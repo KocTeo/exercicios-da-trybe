@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <label for="nome">Nome
+                <input type="text" name="nome" id="input-nome" required maxlength="40">
+            </label>
+            <br>
+            <label for="email">e-mail
+                <input type="email" name="e-mail" id="input-email" maxlength="50" required>
+            </label>
+            <br>
+            <label for="cpf">CPF
+                <input type="text" name="cpf" id="input-cpf" maxlength="11" required>
+            </label>
+            <br>
+            <label for="endereco">Endereço
+                <input type="text" name="endereco" id="input-endereco" maxlength="200" required>
+            </label>
+            <br>
+            <label for="cidade">Cidade
+                <input type="text" name="cidade" id="input-cidade" maxlength="28" required>
+            </label>
+            <br>
+            <label for="estado">Estado
+                <select name="estado" id="input-estado"></select>
+            </label>
+            <br>
+            <label for="moradia">Você mora em:
+                <input type="radio" name="moradia" id="casa">Casa
+                <input type="radio" name="moradia" id="apto">Apartamento
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="curriculo">Curriculo
+                <textarea name="curriculo" id="input-curriculo" cols="30" rows="10" maxlength="1000" required></textarea>
+            </label>
+            <br>
+            <label for="cargo">Cargo
+                <input type="text" name="cargo" id="input-cargo" maxlength="40" required>
+            </label>
+            <br>
+            <label for="descCargo">Descrição do Cargo
+                <textarea name="descCargo" id="input-descCargo" cols="30" rows="10" maxlength="500" required></textarea>
+            </label>
+            <br>
+            <label for="inicio">Data de inicio
+                <input type="date" name="inicio" id="input-inicioEmpr" required>
+            </label>
+        </fieldset>
+        <button>Enviar Formulário</button>
+    </form>
+    <script src="scriptForm.js"></script>
+</body>
+</html>
