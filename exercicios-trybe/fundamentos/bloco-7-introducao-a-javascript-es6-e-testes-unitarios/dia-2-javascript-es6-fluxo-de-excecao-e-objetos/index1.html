@@ -15,27 +15,31 @@
   <button id='button'>Somar</button>
   <p id='result'></p>
   <script>
-    function verifyNumber(num1, num2) {
-        if(num1.value === 0 || num2.value === 0){
-            throw new Error('insira os dois valores');
-        }
+    const verifyNumber = (value1, value2) => {
+      if(!value1 || !value2) {
+        throw new Error('Informe os dois valores para realizar a soma');
+      }
+      if(isNaN(value1) || isNaN(value2)) {
+        throw new Error('Informe apenas números para realizar a soma');
+      }
     }
-    
+
     function sum() {
       try {
       const value1 = document.getElementById('value1').value;
       const value2 = document.getElementById('value2').value;
-      verifyNumber(parseInt(value1), parseInt(value2));
+      verifyNumber(value1, value2);
       const result = parseInt(value1) + parseInt(value2);
       document.getElementById('result').innerHTML = `Resultado: ${result}`;
       document.getElementById('value1').value = '';
-      document.getElementById('value2').value = ''; 
-    } catch (error){
-      throw error.message;
+      document.getElementById('value2').value = '';
+      } catch (error) {
+        document.getElementById('result').innerHTML = `Erro: ${error.message}`;
+      } finally {
+        document.getElementById('value1').value = '';
+        document.getElementById('value2').value = '';
+      }
     }
-    }
-
-
     window.onload = () => {
       const button = document.getElementById('button');
       button.addEventListener('click', sum);
