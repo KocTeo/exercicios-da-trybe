@@ -61,9 +61,10 @@ const books = [
     },
   ];
   
-  const oldBooksOrdered = (arrayBooks) => {
-    const oldBooks = arrayBooks.filter((book) => (2022 - (book.releaseYear) > 60));
-    return oldBooks.sort((firstBirthYearBook, secBirthYearBook) => firstBirthYearBook.releaseYear - secBirthYearBook.releaseYear);
-  }
+  const currentDate = new Date();
+
+  const oldBooksOrdered = (arrayBooks) => oldBooks = arrayBooks.filter(
+  (book) => (currentDate.getFullYear() - (book.releaseYear) > 60))
+  .sort((firstBirthYearBook, secBirthYearBook) => firstBirthYearBook.releaseYear - secBirthYearBook.releaseYear);
 
   console.log(oldBooksOrdered(books));
