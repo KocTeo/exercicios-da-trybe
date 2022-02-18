@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  justify-content: center;
+  border: solid black 2px;
+  border-radius: 10px;
+  background-color:burlywood;
+  margin: 25px;
+}
+
+.pokemon {
+  margin: 25px;
+  border: solid black 1px;
+  width: 168px;
+  border-radius: 10px;
+  background-color: beige;  
+}
+
+.pokemonInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 7px;
+}
